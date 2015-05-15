@@ -2,10 +2,11 @@
 socket          = /tmp/{{ project_name }}.sock
 vhost           = true
 chdir           = {{ project_root }}/{{ project_name }}
+wsgi-file       = {{ project_root }}/{{ project_name }}/{{ project_name }}/wsgi.py
 module          = djano.core.handlers.wsgi:WSGIHandler()
 plugins         = python
 processes       = {{ ansible_processor_vcpus * 2 }}
 threads         = 1
 vacuum          = true
-chown-socket    = www-data
-env     = DJANGO_SETTINGS_MODULE={{ project_name }}.settings
+chown-socket    = vagrant
+env             = DJANGO_SETTINGS_MODULE={{ project_name }}.settings
