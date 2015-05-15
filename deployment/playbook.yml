@@ -1,0 +1,6 @@
+- hosts: gittest
+  roles:
+    - common
+    - uwsgi
+    - nginx
+    - deploy

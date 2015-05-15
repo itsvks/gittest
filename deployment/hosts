@@ -1,0 +1,9 @@
+[zopper]
+10.4.4.3 ansible_ssh_user=vagrant
+
+[zopper:vars]
+repo_url = git@github.com:itsvks/gittest.git
+repo_remote = origin
+repo_branch = master
+
+DEPLOYMENT_TYPE = DEVELOPMENT

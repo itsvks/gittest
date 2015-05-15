@@ -1,0 +1,8 @@
+---
+system_packages:
+   - build-essential
+   - git
+   - python-dev
+   - python-pip
+
+remote_timezone: 'Asia/Kolkata'
